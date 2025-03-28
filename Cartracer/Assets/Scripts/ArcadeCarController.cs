@@ -18,6 +18,7 @@ public class ArcadeCarController : MonoBehaviour
     private float drag;
     public Transform leftFrontWheel, rightFrontWheel;
     public float maxWheelTurn;
+    [SerializeField] private int playerIndex = 0;
     
     void Start()
     {
@@ -41,6 +42,8 @@ public class ArcadeCarController : MonoBehaviour
             (steeringInput * maxWheelTurn),
             rightFrontWheel.localRotation.eulerAngles.z);
     }
+    
+    public int GetPlayerIndex() { return playerIndex; }
 
     private void FixedUpdate()
     {
