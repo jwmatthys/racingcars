@@ -8,4 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ACC_Drift_Lite/Scenes/Demo.unity
     guid: 9789e29865be3414080f478abfc4aa71
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: ec4387e692ef1ae12bba22dbc1939c1b,
+      type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ec4aaa0715cd6211d9e976da986b7cee,
+      type: 3}
+  m_UseUCBPForAssetBundles: 0
