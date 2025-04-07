@@ -598,7 +598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1117533764128870488}
   - component: {fileID: 794348744776466783}
-  - component: {fileID: 1516135673834986869}
+  - component: {fileID: 8076369905373305456}
   m_Layer: 0
   m_Name: Sports Sedan
   m_TagString: Untagged
@@ -652,7 +652,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1516135673834986869
+--- !u!114 &8076369905373305456
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -661,9 +661,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5380493851218781993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0fefceefe666bb4682b272ec8c5bdd0, type: 3}
+  m_Script: {fileID: 11500000, guid: f5dd7a36ce9bd760f8f06971d985f286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNumber: 1
   maxSpeed: 90
   maxReverseSpeed: 45
   accelerationMultiplier: 2

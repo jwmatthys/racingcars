@@ -823,7 +823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3934289597926507981}
   - component: {fileID: 6630418887098281102}
-  - component: {fileID: 5823210993824630449}
+  - component: {fileID: 6796631961001196247}
   m_Layer: 0
   m_Name: Drag Racer
   m_TagString: Untagged
@@ -877,7 +877,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5823210993824630449
+--- !u!114 &6796631961001196247
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -886,9 +886,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5579633720391968624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0fefceefe666bb4682b272ec8c5bdd0, type: 3}
+  m_Script: {fileID: 11500000, guid: f5dd7a36ce9bd760f8f06971d985f286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNumber: 1
   maxSpeed: 90
   maxReverseSpeed: 45
   accelerationMultiplier: 2
