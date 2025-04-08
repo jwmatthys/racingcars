@@ -9,8 +9,8 @@ InputManager:
     m_Name: Accel1
     descriptiveName: Player 1 Acceleration
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: s
+    positiveButton: w
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -18,15 +18,15 @@ InputManager:
     sensitivity: 3
     snap: 1
     invert: 0
-    type: 2
+    type: 0
     axis: 1
     joyNum: 1
   - serializedVersion: 3
     m_Name: Accel2
     descriptiveName: Player 2 Acceleration
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: down
+    positiveButton: up
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -34,7 +34,7 @@ InputManager:
     sensitivity: 3
     snap: 1
     invert: 0
-    type: 2
+    type: 0
     axis: 1
     joyNum: 2
   - serializedVersion: 3
@@ -50,15 +50,15 @@ InputManager:
     sensitivity: 3
     snap: 1
     invert: 0
-    type: 2
+    type: 0
     axis: 0
     joyNum: 1
   - serializedVersion: 3
     m_Name: Steer2
     descriptiveName: Player 2 Steering
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: left
+    positiveButton: right
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -66,7 +66,7 @@ InputManager:
     sensitivity: 3
     snap: 1
     invert: 0
-    type: 2
+    type: 0
     axis: 0
     joyNum: 2
   - serializedVersion: 3
@@ -74,12 +74,12 @@ InputManager:
     descriptiveName: Player 2 Braking
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 
+    positiveButton: right ctrl
     altNegativeButton: 
-    altPositiveButton: joystick button 0
-    gravity: 0
+    altPositiveButton: 
+    gravity: 1000
     dead: 0
-    sensitivity: 0
+    sensitivity: 1000
     snap: 0
     invert: 0
     type: 0
@@ -92,10 +92,10 @@ InputManager:
     negativeButton: 
     positiveButton: left ctrl
     altNegativeButton: 
-    altPositiveButton: joystick button 0
-    gravity: 0
+    altPositiveButton: 
+    gravity: 1000
     dead: 0
-    sensitivity: 0
+    sensitivity: 1000
     snap: 0
     invert: 0
     type: 0

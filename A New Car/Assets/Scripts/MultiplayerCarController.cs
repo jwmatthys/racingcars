@@ -321,14 +321,14 @@ public class MultiplayerCarController : MonoBehaviour
         var accelValue = Input.GetAxis(accelInputString);
         var steerValue = Input.GetAxis(steerInputString);
 
-        if (accelValue < 0f)
+        if (accelValue > 0f)
         {
             CancelInvoke(nameof(DecelerateCar));
             deceleratingCar = false;
             GoForward();
         }
 
-        if (accelValue > 0f)
+        if (accelValue < 0f)
         {
             CancelInvoke(nameof(DecelerateCar));
             deceleratingCar = false;
