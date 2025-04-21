@@ -9,6 +9,7 @@ something useful for your game. Best regards, Mena.
 */
 
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,8 @@ public class MultiplayerCarController : MonoBehaviour
 {
     [Range(1, 2)] public int playerNumber = 1;
 
+    public TextMeshProUGUI speedText;
+    
     //CAR SETUP
     [Space(10)]
     [Header("CAR PHYSICS")]
@@ -92,10 +95,7 @@ public class MultiplayerCarController : MonoBehaviour
     [Space(10)]
     [Tooltip("This variable lets you to set up a UI text to display the speed of your car.")]
     public bool useUI;
-
-    [Tooltip("Used to store the UI object that is going to show the speed of the car.")]
-    public Text carSpeedText;
-
+    
     //SOUNDS
 
     [Space(20)]
@@ -294,8 +294,8 @@ public class MultiplayerCarController : MonoBehaviour
         if (useUI)
             InvokeRepeating(nameof(CarSpeedUI), 0f, 0.1f);
         else if (!useUI)
-            if (carSpeedText != null)
-                carSpeedText.text = "0";
+            if (speedText != null)
+                speedText.text = "Speed: 0";
     }
 
     private void SetupSound()
@@ -420,7 +420,7 @@ public class MultiplayerCarController : MonoBehaviour
             try
             {
                 var absoluteCarSpeed = Mathf.Abs(carSpeed);
-                carSpeedText.text = Mathf.RoundToInt(absoluteCarSpeed).ToString();
+                speedText.text = "Speed: " + Mathf.RoundToInt(absoluteCarSpeed).ToString();
             }
             catch (Exception ex)
             {
