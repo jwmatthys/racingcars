@@ -15,12 +15,12 @@ InputManager:
     altPositiveButton: 
     gravity: 10
     dead: 0.01
-    sensitivity: 10
-    snap: 0
+    sensitivity: 2
+    snap: 1
     invert: 0
     type: 0
-    axis: 0
-    joyNum: 0
+    axis: 1
+    joyNum: 1
   - serializedVersion: 3
     m_Name: Accel2
     descriptiveName: 
@@ -31,12 +31,12 @@ InputManager:
     altPositiveButton: 
     gravity: 10
     dead: 0.01
-    sensitivity: 10
-    snap: 0
+    sensitivity: 2
+    snap: 1
     invert: 0
     type: 0
-    axis: 0
-    joyNum: 0
+    axis: 1
+    joyNum: 2
   - serializedVersion: 3
     m_Name: Steer1
     descriptiveName: 
@@ -47,12 +47,12 @@ InputManager:
     altPositiveButton: 
     gravity: 10
     dead: 0.01
-    sensitivity: 10
+    sensitivity: 2
     snap: 0
     invert: 0
     type: 0
     axis: 0
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
     m_Name: Steer2
     descriptiveName: 
@@ -63,12 +63,12 @@ InputManager:
     altPositiveButton: 
     gravity: 10
     dead: 0.01
-    sensitivity: 10
+    sensitivity: 2
     snap: 0
     invert: 0
     type: 0
     axis: 0
-    joyNum: 0
+    joyNum: 2
   - serializedVersion: 3
     m_Name: Brake1
     descriptiveName: 
@@ -80,11 +80,11 @@ InputManager:
     gravity: 10
     dead: 0.01
     sensitivity: 10
-    snap: 0
+    snap: 1
     invert: 0
     type: 0
     axis: 0
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
     m_Name: Respawn1
     descriptiveName: 
@@ -100,7 +100,7 @@ InputManager:
     invert: 0
     type: 0
     axis: 0
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
     m_Name: Respawn2
     descriptiveName: 
@@ -111,14 +111,14 @@ InputManager:
     altPositiveButton: 
     gravity: 10
     dead: 0.01
-    sensitivity: 10
+    sensitivity: 2
     snap: 0
     invert: 0
     type: 0
     axis: 0
-    joyNum: 0
+    joyNum: 2
   - serializedVersion: 3
-    m_Name: ' Brake2'
+    m_Name: Brake2
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -132,5 +132,5 @@ InputManager:
     invert: 0
     type: 0
     axis: 0
-    joyNum: 0
+    joyNum: 2
   m_UsePhysicalKeys: 1

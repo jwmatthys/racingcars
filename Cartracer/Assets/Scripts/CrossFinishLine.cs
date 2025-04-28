@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // show message on UI - maybe particle effect (confetti, fireworks?)
 // change game state - GameManager
@@ -101,5 +103,12 @@ public class CrossFinishLine : MonoBehaviour
     {
         winText.gameObject.SetActive(true);
         winText.text = "Player " + playerNumber + " wins!";
+        StartCoroutine(ReloadScene());
+    }
+    
+    IEnumerator ReloadScene()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
