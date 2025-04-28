@@ -5,17 +5,17 @@ public class PauseManager : MonoBehaviour
     private bool isPaused = false;
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
             {
-                isPaused = true;
-                OnPausePressed();
+                isPaused = false;
+                OnResumePressed();
             }
             else
             {
-                isPaused = false;
-                OnResumePressed();
+                isPaused = true;
+                OnPausePressed();
             }
         }
     }
